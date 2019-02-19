@@ -1,0 +1,24 @@
+{
+  "name": "kucoin-node-api",
+  "version": "1.0.0",
+  "description": "KuCoin Cryptocurrency Exchange v2 API wrapper/SDK",
+  "main": "kucoin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "KuCoin",
+    "API",
+    "v2",
+    "cryptocurrency",
+    "algotrading",
+    "KCS",
+    "SDK"
+  ],
+  "author": "Eric Abrahams",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ws": "^6.1.4"
+  }
+}
