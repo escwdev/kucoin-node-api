@@ -18,9 +18,9 @@ To begin using the API wrapper, require it, create a config object that contains
 Example code is as follows:
 
 ```javascript 
-const Kucoin = require('kucoin-node-api')
+const api = require('kucoin-node-api')
 
-config = {
+const config = {
   apiKey: 'xXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxXXX',
   secretKey: 'xxxxxxxxXXXXXXXXXXXXXxxXXXXXXXXXXXXXxxxXXX',
   passphrase: 'xxxxxx',
@@ -462,8 +462,6 @@ api.initSocket({topic: "balances"}, (msg) => {
 The event handler can be programmed to manipulate/store the returned websocket stream data as desired.
 
 ## Donation Addresses
-
-UPDATE
 
 BTC: 3KvTuAnv7o2VAf4LGgg1MiDURd2DgjFGaa
 

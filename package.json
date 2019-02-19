@@ -1,7 +1,7 @@
 {
   "name": "kucoin-node-api",
   "version": "1.0.0",
-  "description": "KuCoin Cryptocurrency Exchange v2 API wrapper/SDK",
+  "description": "Node.js KuCoin Cryptocurrency Exchange v2 API Wrapper/SDK",
   "main": "kucoin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +20,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "ws": "^6.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/escwdev/kucoin-node-api"
   }
 }
