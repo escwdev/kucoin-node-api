@@ -452,11 +452,13 @@ params = {
 api.initSocket({topic: "orderbook", symbols: ['KCS-BTC']}, (msg) => {
   let data = JSON.parse(msg)
   console.log(data)
+})
 
 // Private streaming websocket for account balances
 api.initSocket({topic: "balances"}, (msg) => {
   let data = JSON.parse(msg)
   console.log(data)
+})
 ```
 
 The event handler can be programmed to manipulate/store the returned websocket stream data as desired.
