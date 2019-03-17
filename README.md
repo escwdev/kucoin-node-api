@@ -24,7 +24,7 @@ const config = {
   apiKey: 'xXXXXXXXXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxXXX',
   secretKey: 'xxxxxxxxXXXXXXXXXXXXXxxXXXXXXXXXXXXXxxxXXX',
   passphrase: 'xxxxxx',
-  environment: 'live' || 'sandbox'
+  environment: 'live'
 }
 
 api.init(config)
