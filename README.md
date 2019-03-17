@@ -81,6 +81,14 @@ api.getTicker(symbol)
 
 ```javascript
 /* 
+  Get All Tickers
+  GET /api/v1/market/allTickers
+*/
+api.getAllTickers()
+```
+
+```javascript
+/* 
   Get 24hr Stats
   GET /api/v1/market/stats?symbol=<symbol>
   symbol = string
@@ -112,11 +120,20 @@ api.getPartOrderBook(params)
 
 ```javascript
 /* 
+  Get Full Order Book (aggregated)
+  GET /api/v2/market/orderbook/level2?symbol=<symbol> 
+  symbol = string
+*/
+api.getFullOrderBook(symbol)
+```
+
+```javascript
+/* 
   Get Full Order Book (atomic) 
   GET /api/v1/market/orderbook/level3?symbol=<symbol>
   symbol = string
 */
-api.getFullOrderBook(symbol)
+api.getFullOrderBookAtomic(symbol)
 ```
 
 ```javascript
@@ -130,7 +147,7 @@ api.getTradeHistories(symbol)
 
 ```javascript
 /* 
-  Get Historic Rates
+  Get Klines
   GET /api/v1/market/candles?symbol=<symbol>
   params = {
     symbol: string
@@ -139,7 +156,7 @@ api.getTradeHistories(symbol)
     type: enum [1min, 3min, 5min, 15min, 30min, 1hour, 2hour, 4hour, 6hour, 8hour, 12hour 1day, 1week]
   }
 */
-api.getCandles(params)
+api.getKlines(params)
 ```
 
 ```javascript
@@ -157,6 +174,18 @@ api.getCurrencies()
   currency = string
 */
 api.getCurrency(currency)
+```
+
+```javascript
+/* 
+  Get Fiat Price
+  GET /api/v1/prices
+  params = {
+    base: string (e.g. 'USD') [optional]
+    currencies: array
+  }
+*/
+api.getFiatPrices(params)
 ```
 
 ```javascript
@@ -330,6 +359,38 @@ api.applyForWithdrawal(params)
 api.cancelWithdrawal(params)
 ```
 
+```javascript
+/* 
+  Get V1 Historical Withdrawals List
+  GET /api/v1/hist-withdrawals
+  params = {
+    currentPage: integer [optional]
+    pageSize: integer [optional]
+    currency: string [optional - currency code]
+    startAt: long (unix time) [optional]
+    endAt: long (unix time) [optional]
+    status: string [optional] Available value: PROCESSING, SUCCESS, and FAILURE
+  }
+*/
+api.getV1HistoricalWithdrawls(params)
+```
+
+```javascript
+/* 
+  Get V1 Historical Deposits List
+  GET /api/v1/hist-deposits
+  params = {
+    currentPage: integer [optional]
+    pageSize: integer [optional]
+    currency: string [optional - currency code]
+    startAt: long (unix time) [optional]
+    endAt: long (unix time) [optional]
+    status: string [optional] Available value: PROCESSING, SUCCESS, and FAILURE
+  }
+*/
+api.getV1HistoricalDeposits(params)
+```
+
 ## Trade Endpoints (Private)
 
 
@@ -423,6 +484,22 @@ api.getOrderById(params)
   }
 */
 api.listFills(params)
+```
+
+```javascript
+/* 
+  Get V1 Historical Orders List
+  GET /api/v1/hist-orders
+  params: {
+    currentPage: integer [optional]
+    pageSize: integer [optional]
+    symbol: string [optional]
+    startAt: long (unix time) [optional]
+    endAt: long (unix time) [optional]
+    side: string (buy || sell) [optional]
+  }
+*/
+api.getV1HistoricalOrders(params)
 ```
 
 ## Websockets
