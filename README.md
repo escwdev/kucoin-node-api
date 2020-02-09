@@ -308,6 +308,14 @@ api.getDepositList(params)
 ```
 
 ```javascript
+/* 
+  Get Margin Account
+  GET /api/v1/margin/account
+*/
+api.getMarginAccount()
+```
+
+```javascript
 /*  
   Get Withdrawals List
   GET /api/v1/withdrawals
