@@ -331,6 +331,20 @@ api.getWithdrawalsList(params)
 
 ```javascript
 /* 
+  Get Repay Record
+  GET /api/v1/margin/borrow/outstanding
+  params = {
+    currency: string [optional]
+    currentPage: string [optional (default 1)]
+    pageSize: string [optional (default 50)]
+  }
+*/
+api.getRepayRecord(params)
+```
+
+
+```javascript
+/* 
   Get Withdrawal Quotas
   GET /api/v1/withdrawals/quotas
   params = {
