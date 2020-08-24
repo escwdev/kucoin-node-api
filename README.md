@@ -263,8 +263,9 @@ api.getHolds(params)
   POST /api/accounts/inner-transfer
   params = {
     clientOid: string
-    payAccountId: string
-    recAccountId: string
+    currency: string,
+    from: string
+    to: string
     amount: string
   }
 */
