@@ -41,7 +41,7 @@ Simple example:
 api.getAccounts().then((r) => {
   console.log(r.data)
 }).catch((e) => {
-  console.log(e))
+  console.log(e)
 })
 
 // Async/Await get account info example (private & signed)
