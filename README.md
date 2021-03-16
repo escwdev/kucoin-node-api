@@ -214,7 +214,7 @@ api.getAccounts()
 /* 
   Get Account
   GET /api/v1/accounts/<accountId>
-  params {
+  params = {
     id: accountId
   }
 */
