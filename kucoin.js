@@ -40,6 +40,7 @@ const Kucoin = {
     header.headers['KC-API-TIMESTAMP'] = nonce
     header.headers['KC-API-KEY'] = this.apiKey
     header.headers['KC-API-PASSPHRASE'] = this.passphrase
+    header.headers['KCS-API-KEY-VERSION'] = 2
     return header
   },
   formatQuery: function(queryObj) {
