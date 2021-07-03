@@ -36,10 +36,13 @@ const Kucoin = {
     let signatureResult = crypto.createHmac('sha256', this.secretKey)
       .update(strForSign)
       .digest('base64')
+    let passphraseResult = crypto.createHmac('sha256', this.secretKey)
+      .update(this.passphrase)
+      .digest('base64')
     header.headers['KC-API-SIGN'] = signatureResult
     header.headers['KC-API-TIMESTAMP'] = nonce
     header.headers['KC-API-KEY'] = this.apiKey
-    header.headers['KC-API-PASSPHRASE'] = this.passphrase
+    header.headers['KC-API-PASSPHRASE'] = passphraseResult
     header.headers['KCS-API-KEY-VERSION'] = 2
     return header
   },

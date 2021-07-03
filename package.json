@@ -1,6 +1,6 @@
 {
   "name": "kucoin-node-api",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Node.js KuCoin Cryptocurrency Exchange v2 API Wrapper/SDK",
   "main": "kucoin.js",
   "scripts": {
@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "ws": "^6.1.4"
+    "ws": "^7.5.1"
   },
   "repository": {
     "type": "git",
