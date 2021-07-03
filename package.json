@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
-    "ws": "^7.5.1"
+    "ws": "^6.2.2"
   },
   "repository": {
     "type": "git",
