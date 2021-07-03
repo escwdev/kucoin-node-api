@@ -5,7 +5,7 @@ const Kucoin = {
   init: function(config) {
     let url = ''
     if (config.environment === 'live') {
-      url = 'https://openapi-v2.kucoin.com'
+      url = 'https://api.kucoin.com'
     } else {
       url = 'https://openapi-sandbox.kucoin.com'
     }
