@@ -1,28 +1,48 @@
 {
-  "name": "kucoin-node-api",
-  "version": "2.1.4",
-  "description": "Node.js KuCoin Cryptocurrency Exchange v2 API Wrapper/SDK",
-  "main": "kucoin.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "KuCoin",
-    "API",
-    "v2",
-    "cryptocurrency",
-    "algotrading",
-    "KCS",
-    "SDK"
-  ],
-  "author": "Eric Abrahams",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.21.1",
-    "ws": "^7.5.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/escwdev/kucoin-node-api"
-  }
+    "name": "kucoin-node-api",
+    "version": "2.1.4",
+    "description": "Node.js KuCoin Cryptocurrency Exchange v2 API Wrapper/SDK",
+    "main": "index.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc --project ./"
+    },
+    "keywords": [
+        "KuCoin",
+        "API",
+        "v2",
+        "cryptocurrency",
+        "algotrading",
+        "KCS",
+        "SDK"
+    ],
+    "author": "Eric Abrahams",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "ws": "^7.5.1"
+    },
+    "devDependencies": {
+        "@types/axios": "^0.14.0",
+        "@types/node": "^16.4.4",
+        "@types/ws": "^7.4.7",
+        "@typescript-eslint/eslint-plugin": "^4.28.4",
+        "@typescript-eslint/parser": "^4.28.4",
+        "eslint": "^7.31.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.23.4",
+        "eslint-plugin-jest": "^24.4.0",
+        "eslint-plugin-node": "^11.1.0",
+        "jest": "^27.0.6",
+        "nodemon": "^2.0.12",
+        "prettier": "^2.3.2",
+        "pretty-quick": "^3.1.1",
+        "ts-node": "^10.1.0",
+        "typescript": "^4.3.5",
+        "winston": "^3.3.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/escwdev/kucoin-node-api"
+    }
 }
