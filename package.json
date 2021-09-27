@@ -18,8 +18,8 @@
   "author": "Eric Abrahams",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
-    "ws": "^6.1.4"
+    "axios": "^0.21.4",
+    "ws": "^8.2.2"
   },
   "repository": {
     "type": "git",
