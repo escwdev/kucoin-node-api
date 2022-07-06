@@ -524,6 +524,19 @@ api.listFills(params)
 */
 api.getV1HistoricalOrders(params)
 ```
+```javascript
+/* 
+  Get Position Details
+  GET /api/v1/position?symbol=${symbol}
+  Get Position List
+  GET /api/v1/positions
+  params: {
+    symbol: string [optional]
+  }
+*/
+api.getPosition()       // Get Position List
+api.getPosition(params) // Get Position Details
+```
 
 ## Websockets
 
